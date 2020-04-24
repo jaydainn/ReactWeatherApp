@@ -49,7 +49,7 @@ class App extends React.Component {
 
 
   render() {
-    if(this.state.data != null){
+    if(this.state.data != null  ){
       return (
         <div style={style.container} className="container text-center">
         <div className="input-group mb-3 text-center">
