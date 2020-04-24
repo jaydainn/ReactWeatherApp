@@ -6,7 +6,7 @@ function ProjectCard(props){
     return (
         <div className="col-md-auto">
             <Card>
-                <CardImg src={props.data.img} />
+                <CardImg top width ="50px" src={props.data.img} />
                 <CardBody>
                     <CardTitle>{props.data.title}</CardTitle>
                     <CardText>{props.data.description}</CardText>
