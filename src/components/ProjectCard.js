@@ -4,7 +4,7 @@ import {Card, CardImg, CardText, CardBody,
 
 function ProjectCard(props){
     return (
-        <div>
+        <div className="col-md-auto">
             <Card>
                 <CardImg src={props.data.img} />
                 <CardBody>

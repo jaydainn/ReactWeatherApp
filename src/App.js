@@ -17,11 +17,16 @@ class App extends React.Component {
 
   
   render() {
-   
+    const Projects = this.state.data.map((element) => {
+      return <ProjectCard key={element.id} data={element} />
+    })
     return (
       <div>
         <Header />
-        <h1>{this.state.data}</h1>
+        <div className="row">
+        {Projects}
+        </div>
+        
       </div>
     )
 
