@@ -7,23 +7,23 @@ const style = {
 }
 function WeatherCard(props){
     let weatherimg = ""
-    if(props.data.weather[0].main == "Thunderstorm"){
+    if(props.data.weather[0].main === "Thunderstorm"){
         weatherimg = "https://ssl.gstatic.com/onebox/weather/64/rain_s_cloudy.png"
 
     }
-    if(props.data.weather[0].main == "Clouds"){
+    if(props.data.weather[0].main === "Clouds"){
         weatherimg = "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
 
     }
-    if(props.data.weather[0].main == "Rain"){
+    if(props.data.weather[0].main === "Rain"){
         weatherimg = "https://ssl.gstatic.com/onebox/weather/64/rain.png"
 
     }
-    if(props.data.weather[0].main == "Clear" ||  props.data.weather[0].main == "Haze"){
+    if(props.data.weather[0].main === "Clear" ||  props.data.weather[0].main == "Haze"){
         weatherimg = "https://ssl.gstatic.com/onebox/weather/64/sunny.png"
 
     }
-    if(props.data.weather[0].main == "Snow"){
+    if(props.data.weather[0].main === "Snow"){
         weatherimg = "./data/Snow.png"
 
     }
