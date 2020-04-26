@@ -28,7 +28,7 @@ class App extends React.Component {
 
 
    handleClick(){
-    let url = `http://api.openweathermap.org/data/2.5/weather?q=query&appid=key`
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=query&appid=key`
     url = url.replace("query",this.state.input.toLowerCase());
     url = url.replace("key",API_KEY)
     fetch(url)
