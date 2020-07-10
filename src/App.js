@@ -1,6 +1,7 @@
 import React from 'react'
 import { Spinner } from "reactstrap"
 import WeatherCard from "./components/WeatherCard"
+import NoResult from './components/NoResults'
 const API_KEY = "c6facafece457d4cbb494c629a9804e9"
 const style = {
   container:{
@@ -58,7 +59,13 @@ class App extends React.Component {
               <button onClick={this.handleClick} className="btn btn-warning" type="button"><img height="16" width="16" src="https://img.icons8.com/pastel-glyph/64/000000/search--v2.png"/></button>
             </div>
             </div>
-            <WeatherCard data = {this.state.data} />
+            {this.state.data.name?
+             <WeatherCard data = {this.state.data} />
+             : 
+             <NoResult />
+            
+          }
+           
             </div>
        
         
